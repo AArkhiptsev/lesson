@@ -2,8 +2,10 @@ body {
     background-color: #f8f8f8;
 }
 
-.menu {
+
+.menu li {
     list-style-type: none;
+
 }
 
 .menu a {
@@ -12,9 +14,14 @@ body {
     font-size: 12px;
 }
 
-.menu a:hover {
+a:hover {
     color: darkseagreen;
 }
+
+a:active {
+    color: red;
+}
+
 
 .product {
     color: black;
@@ -53,19 +60,65 @@ body {
     color: #707070;
     font-size: 16px;
     line-height: 20px;
+    text-transform: capitalize;
+    
 }
 
+.inputemail {
+    width: 500px;
+    height: 30px;
+    color: red;
+    background-color: burlywood;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+
+
 .prodfoto {
-    border-radius: 30px 30px 30px 30px / 50px 50px 50px 50px;
-    border-width: 5px;
-    border: solid;
+    outline: 1px solid #666; 
+}
+
+.prodfoto:hover {
+    outline: 0px solid #666; 
 }
 
 .footer:after {
-        content: "Все права защищены  2018. Интернет магазин велосипедов.";
+        content: "Все права защищены \00a9  2018. Интернет магазин велосипедов.";
 }
 
 .header {
-    width: 100px;
-    height: 150px;
+    width: 100%;
+    height: 100px;
+    background: url('/img/logo.jpg') no-repeat;
+    background-size: contain;
+   }
+
+.tablehead {
+    background: #fc0;
+    line-height: 35px;
+    
+}
+
+.good p:first-letter {
+    text-transform: capitalize;
+    color: crimson;
+    font-size: 150%;
+    font-weight: 900;
+    
+}
+
+.table2 {
+    border: 1px solid #222;
+    height: 300px;
+    border-spacing: 5px;
+    border-collapse: collapse;
+}
+
+.table2 td {
+    border: 1px solid #222;
+    vertical-align: middle;
+    text-align: center;
+    width: 80px;
 }
